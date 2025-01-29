@@ -1,0 +1,13 @@
+# src/Resources/config/serialization/Lista.yaml
+App\Entity\Lista:
+    attributes:
+        id:
+            groups: ['lista:read', 'usuario:read']
+        nome:
+            groups: ['lista:read', 'usuario:read']
+        usuario:
+            groups: ['lista:read']
+        tarefas:
+            groups: ['lista:read']
+        usuariosCompartilhados:
+            groups: ['lista:read']

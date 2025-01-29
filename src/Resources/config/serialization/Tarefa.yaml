@@ -1,0 +1,15 @@
+# src/Resources/config/serialization/Tarefa.yaml
+App\Entity\Tarefa:
+    attributes:
+        id:
+            groups: ['tarefa:read', 'lista:read']
+        descricao:
+            groups: ['tarefa:read', 'lista:read']
+        concluida:
+            groups: ['tarefa:read', 'lista:read']
+        dataCriacao:
+            groups: ['tarefa:read', 'lista:read']
+        dataConclusao:
+            groups: ['tarefa:read', 'lista:read']
+        lista:
+            groups: ['tarefa:read']

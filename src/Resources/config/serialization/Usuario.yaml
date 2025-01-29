@@ -1,0 +1,13 @@
+# src/Resources/config/serialization/Usuario.yaml
+App\Entity\Usuario:
+    attributes:
+        id:
+            groups: ['usuario:read']
+        email:
+            groups: ['usuario:read']
+        roles:
+            groups: ['usuario:read']
+        listas:
+            groups: ['usuario:read']
+        listasCompartilhadas:
+            groups: ['usuario:read']
